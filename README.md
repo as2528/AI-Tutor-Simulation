@@ -1,4 +1,4 @@
-# 🧠 AI Tutor Simulation
+# AI Tutor Simulation
 
 A simple simulation of an **AI-powered tutor** interacting with a student over a session of 50 questions. The model tracks how the **student's skill evolves**, and how the **AI is rewarded or penalized** based on the difficulty of questions it selects and how much the student improves.
 
@@ -6,7 +6,7 @@ This is **not a reinforcement learning agent (yet)** — it's a controlled simul
 
 ---
 
-## 💡 Motivation
+## Motivation
 
 The goal is to understand how an AI tutor could:
 - Adaptively select questions of varying difficulty
@@ -17,7 +17,7 @@ This mirrors real educational settings, where **over-challenging or under-challe
 
 ---
 
-## 🔁 Simulation Logic
+## Simulation Logic
 
 At each time step (question):
 - The AI selects a question of either **easy (1)** or **hard (2)** difficulty
@@ -27,7 +27,7 @@ At each time step (question):
 
 ---
 
-## 🧠 Student Skill Update Equation
+## Student Skill Update Equation
 
 Let:
 - `α` = learning rate  
@@ -51,7 +51,7 @@ Skill is clamped to be non-negative.
 
 ---
 
-## 🤖 AI Reward Function
+## AI Reward Function
 
 The AI receives a reward at each step:
 
@@ -64,16 +64,16 @@ This encourages the AI to:
 
 ---
 
-## 📊 Outputs
+## Outputs
 
 - `AI_Tutor_Results.csv`: Logs each question's result, skill level, AI reward
 - A line chart that shows:
-  - 📈 Student skill progression
-  - 📉 Cumulative AI reward over time
+  - Student skill progression
+  - Cumulative AI reward over time
 
 ---
 
-## ⚙️ Adjustable Parameters
+## Adjustable Parameters
 
 | Parameter       | Meaning                                      |
 |-----------------|----------------------------------------------|
@@ -85,7 +85,7 @@ This encourages the AI to:
 
 ---
 
-## 🧭 Future Work
+## Future Work
 
 - Introduce a **learned policy** (e.g., ε-greedy, softmax)  
 - Simulate **multiple students** with different learning curves  
@@ -93,6 +93,6 @@ This encourages the AI to:
 
 ---
 
-## 📜 License
+## License
 
 MIT License
